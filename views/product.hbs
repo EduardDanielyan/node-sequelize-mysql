@@ -1,0 +1,20 @@
+<h1>product</h1>
+
+<table class="table table-dark">
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Count</th>
+        <th>Description</th>
+        <th>Users info</th>
+    </tr>
+    {{#each product}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.price}}</td>
+        <td>{{this.count}}</td>
+        <td>{{this.description}}</td>
+        <td>{{this.user.name}} {{this.user.surname}} </td>
+    </tr>
+    {{/each}}
+</table>
